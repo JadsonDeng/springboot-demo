@@ -254,213 +254,213 @@ public class DictionaryExample {
             return (Criteria) this;
         }
 
-        public Criteria andGroupIsNull() {
-            addCriterion("group is null");
+        public Criteria andDicGroupIsNull() {
+            addCriterion("dic_group is null");
             return (Criteria) this;
         }
 
-        public Criteria andGroupIsNotNull() {
-            addCriterion("group is not null");
+        public Criteria andDicGroupIsNotNull() {
+            addCriterion("dic_group is not null");
             return (Criteria) this;
         }
 
-        public Criteria andGroupEqualTo(String value) {
-            addCriterion("group =", value, "group");
+        public Criteria andDicGroupEqualTo(String value) {
+            addCriterion("dic_group =", value, "dicGroup");
             return (Criteria) this;
         }
 
-        public Criteria andGroupNotEqualTo(String value) {
-            addCriterion("group <>", value, "group");
+        public Criteria andDicGroupNotEqualTo(String value) {
+            addCriterion("dic_group <>", value, "dicGroup");
             return (Criteria) this;
         }
 
-        public Criteria andGroupGreaterThan(String value) {
-            addCriterion("group >", value, "group");
+        public Criteria andDicGroupGreaterThan(String value) {
+            addCriterion("dic_group >", value, "dicGroup");
             return (Criteria) this;
         }
 
-        public Criteria andGroupGreaterThanOrEqualTo(String value) {
-            addCriterion("group >=", value, "group");
+        public Criteria andDicGroupGreaterThanOrEqualTo(String value) {
+            addCriterion("dic_group >=", value, "dicGroup");
             return (Criteria) this;
         }
 
-        public Criteria andGroupLessThan(String value) {
-            addCriterion("group <", value, "group");
+        public Criteria andDicGroupLessThan(String value) {
+            addCriterion("dic_group <", value, "dicGroup");
             return (Criteria) this;
         }
 
-        public Criteria andGroupLessThanOrEqualTo(String value) {
-            addCriterion("group <=", value, "group");
+        public Criteria andDicGroupLessThanOrEqualTo(String value) {
+            addCriterion("dic_group <=", value, "dicGroup");
             return (Criteria) this;
         }
 
-        public Criteria andGroupLike(String value) {
-            addCriterion("group like", value, "group");
+        public Criteria andDicGroupLike(String value) {
+            addCriterion("dic_group like", value, "dicGroup");
             return (Criteria) this;
         }
 
-        public Criteria andGroupNotLike(String value) {
-            addCriterion("group not like", value, "group");
+        public Criteria andDicGroupNotLike(String value) {
+            addCriterion("dic_group not like", value, "dicGroup");
             return (Criteria) this;
         }
 
-        public Criteria andGroupIn(List<String> values) {
-            addCriterion("group in", values, "group");
+        public Criteria andDicGroupIn(List<String> values) {
+            addCriterion("dic_group in", values, "dicGroup");
             return (Criteria) this;
         }
 
-        public Criteria andGroupNotIn(List<String> values) {
-            addCriterion("group not in", values, "group");
+        public Criteria andDicGroupNotIn(List<String> values) {
+            addCriterion("dic_group not in", values, "dicGroup");
             return (Criteria) this;
         }
 
-        public Criteria andGroupBetween(String value1, String value2) {
-            addCriterion("group between", value1, value2, "group");
+        public Criteria andDicGroupBetween(String value1, String value2) {
+            addCriterion("dic_group between", value1, value2, "dicGroup");
             return (Criteria) this;
         }
 
-        public Criteria andGroupNotBetween(String value1, String value2) {
-            addCriterion("group not between", value1, value2, "group");
+        public Criteria andDicGroupNotBetween(String value1, String value2) {
+            addCriterion("dic_group not between", value1, value2, "dicGroup");
             return (Criteria) this;
         }
 
-        public Criteria andNameIsNull() {
-            addCriterion("name is null");
+        public Criteria andDicNameIsNull() {
+            addCriterion("dic_name is null");
             return (Criteria) this;
         }
 
-        public Criteria andNameIsNotNull() {
-            addCriterion("name is not null");
+        public Criteria andDicNameIsNotNull() {
+            addCriterion("dic_name is not null");
             return (Criteria) this;
         }
 
-        public Criteria andNameEqualTo(String value) {
-            addCriterion("name =", value, "name");
+        public Criteria andDicNameEqualTo(String value) {
+            addCriterion("dic_name =", value, "dicName");
             return (Criteria) this;
         }
 
-        public Criteria andNameNotEqualTo(String value) {
-            addCriterion("name <>", value, "name");
+        public Criteria andDicNameNotEqualTo(String value) {
+            addCriterion("dic_name <>", value, "dicName");
             return (Criteria) this;
         }
 
-        public Criteria andNameGreaterThan(String value) {
-            addCriterion("name >", value, "name");
+        public Criteria andDicNameGreaterThan(String value) {
+            addCriterion("dic_name >", value, "dicName");
             return (Criteria) this;
         }
 
-        public Criteria andNameGreaterThanOrEqualTo(String value) {
-            addCriterion("name >=", value, "name");
+        public Criteria andDicNameGreaterThanOrEqualTo(String value) {
+            addCriterion("dic_name >=", value, "dicName");
             return (Criteria) this;
         }
 
-        public Criteria andNameLessThan(String value) {
-            addCriterion("name <", value, "name");
+        public Criteria andDicNameLessThan(String value) {
+            addCriterion("dic_name <", value, "dicName");
             return (Criteria) this;
         }
 
-        public Criteria andNameLessThanOrEqualTo(String value) {
-            addCriterion("name <=", value, "name");
+        public Criteria andDicNameLessThanOrEqualTo(String value) {
+            addCriterion("dic_name <=", value, "dicName");
             return (Criteria) this;
         }
 
-        public Criteria andNameLike(String value) {
-            addCriterion("name like", value, "name");
+        public Criteria andDicNameLike(String value) {
+            addCriterion("dic_name like", value, "dicName");
             return (Criteria) this;
         }
 
-        public Criteria andNameNotLike(String value) {
-            addCriterion("name not like", value, "name");
+        public Criteria andDicNameNotLike(String value) {
+            addCriterion("dic_name not like", value, "dicName");
             return (Criteria) this;
         }
 
-        public Criteria andNameIn(List<String> values) {
-            addCriterion("name in", values, "name");
+        public Criteria andDicNameIn(List<String> values) {
+            addCriterion("dic_name in", values, "dicName");
             return (Criteria) this;
         }
 
-        public Criteria andNameNotIn(List<String> values) {
-            addCriterion("name not in", values, "name");
+        public Criteria andDicNameNotIn(List<String> values) {
+            addCriterion("dic_name not in", values, "dicName");
             return (Criteria) this;
         }
 
-        public Criteria andNameBetween(String value1, String value2) {
-            addCriterion("name between", value1, value2, "name");
+        public Criteria andDicNameBetween(String value1, String value2) {
+            addCriterion("dic_name between", value1, value2, "dicName");
             return (Criteria) this;
         }
 
-        public Criteria andNameNotBetween(String value1, String value2) {
-            addCriterion("name not between", value1, value2, "name");
+        public Criteria andDicNameNotBetween(String value1, String value2) {
+            addCriterion("dic_name not between", value1, value2, "dicName");
             return (Criteria) this;
         }
 
-        public Criteria andValueIsNull() {
-            addCriterion("value is null");
+        public Criteria andDicValueIsNull() {
+            addCriterion("dic_value is null");
             return (Criteria) this;
         }
 
-        public Criteria andValueIsNotNull() {
-            addCriterion("value is not null");
+        public Criteria andDicValueIsNotNull() {
+            addCriterion("dic_value is not null");
             return (Criteria) this;
         }
 
-        public Criteria andValueEqualTo(String value) {
-            addCriterion("value =", value, "value");
+        public Criteria andDicValueEqualTo(String value) {
+            addCriterion("dic_value =", value, "dicValue");
             return (Criteria) this;
         }
 
-        public Criteria andValueNotEqualTo(String value) {
-            addCriterion("value <>", value, "value");
+        public Criteria andDicValueNotEqualTo(String value) {
+            addCriterion("dic_value <>", value, "dicValue");
             return (Criteria) this;
         }
 
-        public Criteria andValueGreaterThan(String value) {
-            addCriterion("value >", value, "value");
+        public Criteria andDicValueGreaterThan(String value) {
+            addCriterion("dic_value >", value, "dicValue");
             return (Criteria) this;
         }
 
-        public Criteria andValueGreaterThanOrEqualTo(String value) {
-            addCriterion("value >=", value, "value");
+        public Criteria andDicValueGreaterThanOrEqualTo(String value) {
+            addCriterion("dic_value >=", value, "dicValue");
             return (Criteria) this;
         }
 
-        public Criteria andValueLessThan(String value) {
-            addCriterion("value <", value, "value");
+        public Criteria andDicValueLessThan(String value) {
+            addCriterion("dic_value <", value, "dicValue");
             return (Criteria) this;
         }
 
-        public Criteria andValueLessThanOrEqualTo(String value) {
-            addCriterion("value <=", value, "value");
+        public Criteria andDicValueLessThanOrEqualTo(String value) {
+            addCriterion("dic_value <=", value, "dicValue");
             return (Criteria) this;
         }
 
-        public Criteria andValueLike(String value) {
-            addCriterion("value like", value, "value");
+        public Criteria andDicValueLike(String value) {
+            addCriterion("dic_value like", value, "dicValue");
             return (Criteria) this;
         }
 
-        public Criteria andValueNotLike(String value) {
-            addCriterion("value not like", value, "value");
+        public Criteria andDicValueNotLike(String value) {
+            addCriterion("dic_value not like", value, "dicValue");
             return (Criteria) this;
         }
 
-        public Criteria andValueIn(List<String> values) {
-            addCriterion("value in", values, "value");
+        public Criteria andDicValueIn(List<String> values) {
+            addCriterion("dic_value in", values, "dicValue");
             return (Criteria) this;
         }
 
-        public Criteria andValueNotIn(List<String> values) {
-            addCriterion("value not in", values, "value");
+        public Criteria andDicValueNotIn(List<String> values) {
+            addCriterion("dic_value not in", values, "dicValue");
             return (Criteria) this;
         }
 
-        public Criteria andValueBetween(String value1, String value2) {
-            addCriterion("value between", value1, value2, "value");
+        public Criteria andDicValueBetween(String value1, String value2) {
+            addCriterion("dic_value between", value1, value2, "dicValue");
             return (Criteria) this;
         }
 
-        public Criteria andValueNotBetween(String value1, String value2) {
-            addCriterion("value not between", value1, value2, "value");
+        public Criteria andDicValueNotBetween(String value1, String value2) {
+            addCriterion("dic_value not between", value1, value2, "dicValue");
             return (Criteria) this;
         }
 
@@ -534,63 +534,63 @@ public class DictionaryExample {
             return (Criteria) this;
         }
 
-        public Criteria andOrderIsNull() {
-            addCriterion("order is null");
+        public Criteria andOrderingIsNull() {
+            addCriterion("ordering is null");
             return (Criteria) this;
         }
 
-        public Criteria andOrderIsNotNull() {
-            addCriterion("order is not null");
+        public Criteria andOrderingIsNotNull() {
+            addCriterion("ordering is not null");
             return (Criteria) this;
         }
 
-        public Criteria andOrderEqualTo(Integer value) {
-            addCriterion("order =", value, "order");
+        public Criteria andOrderingEqualTo(Integer value) {
+            addCriterion("ordering =", value, "ordering");
             return (Criteria) this;
         }
 
-        public Criteria andOrderNotEqualTo(Integer value) {
-            addCriterion("order <>", value, "order");
+        public Criteria andOrderingNotEqualTo(Integer value) {
+            addCriterion("ordering <>", value, "ordering");
             return (Criteria) this;
         }
 
-        public Criteria andOrderGreaterThan(Integer value) {
-            addCriterion("order >", value, "order");
+        public Criteria andOrderingGreaterThan(Integer value) {
+            addCriterion("ordering >", value, "ordering");
             return (Criteria) this;
         }
 
-        public Criteria andOrderGreaterThanOrEqualTo(Integer value) {
-            addCriterion("order >=", value, "order");
+        public Criteria andOrderingGreaterThanOrEqualTo(Integer value) {
+            addCriterion("ordering >=", value, "ordering");
             return (Criteria) this;
         }
 
-        public Criteria andOrderLessThan(Integer value) {
-            addCriterion("order <", value, "order");
+        public Criteria andOrderingLessThan(Integer value) {
+            addCriterion("ordering <", value, "ordering");
             return (Criteria) this;
         }
 
-        public Criteria andOrderLessThanOrEqualTo(Integer value) {
-            addCriterion("order <=", value, "order");
+        public Criteria andOrderingLessThanOrEqualTo(Integer value) {
+            addCriterion("ordering <=", value, "ordering");
             return (Criteria) this;
         }
 
-        public Criteria andOrderIn(List<Integer> values) {
-            addCriterion("order in", values, "order");
+        public Criteria andOrderingIn(List<Integer> values) {
+            addCriterion("ordering in", values, "ordering");
             return (Criteria) this;
         }
 
-        public Criteria andOrderNotIn(List<Integer> values) {
-            addCriterion("order not in", values, "order");
+        public Criteria andOrderingNotIn(List<Integer> values) {
+            addCriterion("ordering not in", values, "ordering");
             return (Criteria) this;
         }
 
-        public Criteria andOrderBetween(Integer value1, Integer value2) {
-            addCriterion("order between", value1, value2, "order");
+        public Criteria andOrderingBetween(Integer value1, Integer value2) {
+            addCriterion("ordering between", value1, value2, "ordering");
             return (Criteria) this;
         }
 
-        public Criteria andOrderNotBetween(Integer value1, Integer value2) {
-            addCriterion("order not between", value1, value2, "order");
+        public Criteria andOrderingNotBetween(Integer value1, Integer value2) {
+            addCriterion("ordering not between", value1, value2, "ordering");
             return (Criteria) this;
         }
 
@@ -651,6 +651,126 @@ public class DictionaryExample {
 
         public Criteria andStateNotBetween(Integer value1, Integer value2) {
             addCriterion("state not between", value1, value2, "state");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIsNull() {
+            addCriterion("type is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIsNotNull() {
+            addCriterion("type is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeEqualTo(Integer value) {
+            addCriterion("type =", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeNotEqualTo(Integer value) {
+            addCriterion("type <>", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeGreaterThan(Integer value) {
+            addCriterion("type >", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeGreaterThanOrEqualTo(Integer value) {
+            addCriterion("type >=", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeLessThan(Integer value) {
+            addCriterion("type <", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeLessThanOrEqualTo(Integer value) {
+            addCriterion("type <=", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIn(List<Integer> values) {
+            addCriterion("type in", values, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeNotIn(List<Integer> values) {
+            addCriterion("type not in", values, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeBetween(Integer value1, Integer value2) {
+            addCriterion("type between", value1, value2, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeNotBetween(Integer value1, Integer value2) {
+            addCriterion("type not between", value1, value2, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andParentIdIsNull() {
+            addCriterion("parent_id is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andParentIdIsNotNull() {
+            addCriterion("parent_id is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andParentIdEqualTo(Integer value) {
+            addCriterion("parent_id =", value, "parentId");
+            return (Criteria) this;
+        }
+
+        public Criteria andParentIdNotEqualTo(Integer value) {
+            addCriterion("parent_id <>", value, "parentId");
+            return (Criteria) this;
+        }
+
+        public Criteria andParentIdGreaterThan(Integer value) {
+            addCriterion("parent_id >", value, "parentId");
+            return (Criteria) this;
+        }
+
+        public Criteria andParentIdGreaterThanOrEqualTo(Integer value) {
+            addCriterion("parent_id >=", value, "parentId");
+            return (Criteria) this;
+        }
+
+        public Criteria andParentIdLessThan(Integer value) {
+            addCriterion("parent_id <", value, "parentId");
+            return (Criteria) this;
+        }
+
+        public Criteria andParentIdLessThanOrEqualTo(Integer value) {
+            addCriterion("parent_id <=", value, "parentId");
+            return (Criteria) this;
+        }
+
+        public Criteria andParentIdIn(List<Integer> values) {
+            addCriterion("parent_id in", values, "parentId");
+            return (Criteria) this;
+        }
+
+        public Criteria andParentIdNotIn(List<Integer> values) {
+            addCriterion("parent_id not in", values, "parentId");
+            return (Criteria) this;
+        }
+
+        public Criteria andParentIdBetween(Integer value1, Integer value2) {
+            addCriterion("parent_id between", value1, value2, "parentId");
+            return (Criteria) this;
+        }
+
+        public Criteria andParentIdNotBetween(Integer value1, Integer value2) {
+            addCriterion("parent_id not between", value1, value2, "parentId");
             return (Criteria) this;
         }
     }
@@ -758,5 +878,15 @@ public class DictionaryExample {
         protected Criterion(String condition, Object value, Object secondValue) {
             this(condition, value, secondValue, null);
         }
+
+    }
+    protected String limitClause;
+
+    public String getLimitClause() {
+        return limitClause;
+    }
+
+    public void setLimitClause(int offset, int limit) {
+        this.limitClause = offset + ", " + limit;
     }
 }

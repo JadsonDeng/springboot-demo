@@ -1,26 +1,30 @@
 package com.jadson.study;
 
-import com.jadson.study.dao.mapper.UserMapper;
+import com.jadson.study.dao.mapper.DictionaryMapper;
+import com.jadson.study.domain.database.DictionaryExample;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.jadson.study.dao.UserDao;
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SpringBootMybatisApplicationTests {
-	
-	@Autowired
-	private UserDao userDao;
-	@Autowired
-	private UserMapper userMapper;
 
-	@Test
-	public void contextLoads() {
-		System.out.println(userMapper.selectByExample(null));
-	}
+    @Autowired
+    private DictionaryMapper dictionaryMapper;
+
+    @Test
+    public void contextLoads() {
+        DictionaryExample example = new DictionaryExample();
+        DictionaryExample.Criteria criteria = example.createCriteria();
+
+        example.setDistinct(true);
+        example.setOrderByClause("ordering desc");
+        example.setLimitClause(0,10);
+        criteria.andIdEqualTo(1);
+        System.out.println(dictionaryMapper.selectByExampleWithLimit(example).get(0));
+    }
 
 }

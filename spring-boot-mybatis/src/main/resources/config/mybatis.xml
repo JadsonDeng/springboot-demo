@@ -10,7 +10,4 @@
         <typeAlias alias="LinkedList" type="java.util.LinkedList" />
         <package name="com.jadson.study.domain"/>
     </typeAliases>
-    <mappers>
-        <package name="mapper/com/jadson/study/*.xml"/>
-    </mappers>
 </configuration>

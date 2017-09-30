@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan("com.jadson.study.dao.mapper")
 public class SpringBootMybatisApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringBootMybatisApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootMybatisApplication.class, args);
+    }
 }
