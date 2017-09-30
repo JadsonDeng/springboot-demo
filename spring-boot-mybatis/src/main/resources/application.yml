@@ -1,0 +1,16 @@
+server:
+  context-path: /jadson
+  port: 8082
+spring:
+  freemarker:
+    template-loader-path: classpath:templates
+    suffix: .ftl
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/study?useUnicode=true&characterEncoding=utf8&useSSL=false
+    
+mybatis:
+  config-location: classpath:config/mybatis.xml
+#  mapper-locations: classpath:mapper/com/jadson/study/*.xml

@@ -1,0 +1,10 @@
+server:
+  context-path: /study
+  port: 8081
+spring:
+  freemarker:
+    suffix: .ftl
+    template-loader-path: classpath:/templates/
+    prefix:
+banner:
+  location: classpath:/system/banner.txt

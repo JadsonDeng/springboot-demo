@@ -1,0 +1,34 @@
+server:
+  context-path: /study
+  port: 8080
+spring:
+  freemarker:
+    suffix: .ftl
+    template-loader-path: classpath:/templates/
+    prefix:
+  redis:
+    database:
+    host: localhost
+    port: 6379
+    password:
+    pool:
+      max-active: 8
+      max-wait: 1
+      max-idle: 8
+      min-idle: 0
+    timeout: 0
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/study?useUnicode=true&characterEncoding=utf8&useSSL=false
+banner:
+  location: classpath:/system/banner.txt
+
+administrator:
+  user-name: jadson
+  password: 123456
+mybatis:
+  mapper-locations: classpath:mybatis/study/*Mapper.xml
+  type-aliases-package: com.jadson.study.domain
+  config-location: classpath:config/mybatis.xml
