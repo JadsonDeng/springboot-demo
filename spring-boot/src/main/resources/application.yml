@@ -5,3 +5,7 @@ spring:
   freemarker:
     template-loader-path: classpath:templates
     suffix: .ftl
+mybatis:
+  config-location: classpath:config/mybatis.xml
+  type-aliases-package: com.jadson.study.domain
+  mapper-locations: classpath:mapper/com/jadson/study/*.xml
