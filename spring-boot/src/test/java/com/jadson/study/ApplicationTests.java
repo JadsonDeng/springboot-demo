@@ -1,7 +1,9 @@
 package com.jadson.study;
 
+import com.jadson.study.dao.mapper.DictionaryMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -9,8 +11,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class ApplicationTests {
 
-	@Test
-	public void contextLoads() {
-	}
+    @Autowired(required = false)
+    private DictionaryMapper dictionaryMapper;
+
+    @Test
+    public void contextLoads() {
+        System.out.println(dictionaryMapper.selectByPrimaryKey(1));
+    }
 
 }

@@ -2,6 +2,11 @@ server:
   context-path: /jadson
   port: 8081
 spring:
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/study?useUnicode=true&characterEncoding=utf8&useSSL=false
   freemarker:
     template-loader-path: classpath:templates
     suffix: .ftl
