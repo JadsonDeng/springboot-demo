@@ -1,12 +1,13 @@
 package com.jadson.study.utils;
 
-import com.jadson.study.domain.database.Dictionary;
-import com.jadson.study.domain.database.DictionaryExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
 
+import org.apache.ibatis.annotations.Param;
+
+import com.jadson.study.domain.database.Dictionary;
+
 public interface BaseMapper<S, T> {
+
     int countByExample(T example);
 
     int deleteByExample(T example);

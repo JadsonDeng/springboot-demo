@@ -5,7 +5,15 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
+/**
+ * dao接口封装
+ * @author jadson
+ *
+ * @param <S>
+ * @param <T>
+ */
 public interface BaseDao<S, T> {
+	
     int countByExample(T example);
 
     int deleteByExample(T example);

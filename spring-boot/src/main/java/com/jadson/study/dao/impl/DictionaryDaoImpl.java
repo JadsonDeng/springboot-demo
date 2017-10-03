@@ -1,15 +1,16 @@
 package com.jadson.study.dao.impl;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
 import com.jadson.study.dao.DictionaryDao;
 import com.jadson.study.dao.mapper.DictionaryMapper;
 import com.jadson.study.domain.database.Dictionary;
 import com.jadson.study.domain.database.DictionaryExample;
 import com.jadson.study.utils.BaseDaoImpl;
 import com.jadson.study.utils.BaseMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
-
-import java.util.List;
 
 /**
  * jadson

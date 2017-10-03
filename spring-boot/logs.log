@@ -1,0 +1,62 @@
+2017-10-03 13:55:16.068  INFO 492 --- [main] c.j.s.service.DictionaryServiceImplTest  : Starting DictionaryServiceImplTest on dengjunzhendeMacBook-Pro.local with PID 492 (started by jadson in /Users/jadson/share/code/spring-boot)
+2017-10-03 13:55:16.070 DEBUG 492 --- [main] c.j.s.service.DictionaryServiceImplTest  : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-10-03 13:55:16.071  INFO 492 --- [main] c.j.s.service.DictionaryServiceImplTest  : No active profile set, falling back to default profiles: default
+2017-10-03 13:55:16.133  INFO 492 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@482bce4f: startup date [Tue Oct 03 13:55:16 CST 2017]; root of context hierarchy
+2017-10-03 13:55:18.269  INFO 492 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@482bce4f: startup date [Tue Oct 03 13:55:16 CST 2017]; root of context hierarchy
+2017-10-03 13:55:18.341  INFO 492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.jadson.study.web.HelloController.hello(java.util.Map<java.lang.String, java.lang.String>)
+2017-10-03 13:55:18.343  INFO 492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-03 13:55:18.343  INFO 492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-03 13:55:18.370  INFO 492 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-03 13:55:18.370  INFO 492 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-03 13:55:18.412  INFO 492 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-03 13:55:18.588  INFO 492 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-03 13:55:18.796  INFO 492 --- [main] c.j.s.service.DictionaryServiceImplTest  : Started DictionaryServiceImplTest in 13.31 seconds (JVM running for 15.022)
+2017-10-03 13:55:18.854 DEBUG 492 --- [main] c.j.s.s.impl.DictionaryServiceImpl       : ==> queryOneById:null 
+2017-10-03 13:55:18.857 ERROR 492 --- [main] c.j.s.s.impl.DictionaryServiceImpl       : ==> queryById, id is null,return null
+2017-10-03 13:55:18.861  INFO 492 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@482bce4f: startup date [Tue Oct 03 13:55:16 CST 2017]; root of context hierarchy
+2017-10-03 13:56:29.158  INFO 494 --- [restartedMain] com.jadson.study.Application             : Starting Application on dengjunzhendeMacBook-Pro.local with PID 494 (/Users/jadson/share/code/spring-boot/target/classes started by jadson in /Users/jadson/share/code/spring-boot)
+2017-10-03 13:56:29.159 DEBUG 494 --- [restartedMain] com.jadson.study.Application             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-10-03 13:56:29.160  INFO 494 --- [restartedMain] com.jadson.study.Application             : No active profile set, falling back to default profiles: default
+2017-10-03 13:56:29.204  INFO 494 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1146e9b7: startup date [Tue Oct 03 13:56:29 CST 2017]; root of context hierarchy
+2017-10-03 13:56:30.208  INFO 494 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-10-03 13:56:30.223  INFO 494 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-03 13:56:30.224  INFO 494 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-03 13:56:30.307  INFO 494 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/jadson]        : Initializing Spring embedded WebApplicationContext
+2017-10-03 13:56:30.309  INFO 494 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1108 ms
+2017-10-03 13:56:30.443  INFO 494 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-03 13:56:30.447  INFO 494 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-03 13:56:30.448  INFO 494 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-03 13:56:30.448  INFO 494 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-03 13:56:30.448  INFO 494 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-03 13:56:31.051  INFO 494 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1146e9b7: startup date [Tue Oct 03 13:56:29 CST 2017]; root of context hierarchy
+2017-10-03 13:56:31.087  INFO 494 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.jadson.study.web.HelloController.hello(java.util.Map<java.lang.String, java.lang.String>)
+2017-10-03 13:56:31.089  INFO 494 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-03 13:56:31.089  INFO 494 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-03 13:56:31.110  INFO 494 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-03 13:56:31.110  INFO 494 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-03 13:56:31.132  INFO 494 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-03 13:56:31.244  INFO 494 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-03 13:56:31.419  INFO 494 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-10-03 13:56:31.466  INFO 494 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-03 13:56:31.517  INFO 494 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-10-03 13:56:31.520  INFO 494 --- [restartedMain] com.jadson.study.Application             : Started Application in 12.556 seconds (JVM running for 23.372)
+2017-10-03 13:56:48.052  INFO 494 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/jadson]        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-03 13:56:48.052  INFO 494 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-03 13:56:48.065  INFO 494 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2017-10-03 13:56:48.091 DEBUG 494 --- [http-nio-8081-exec-1] c.j.s.s.impl.DictionaryServiceImpl       : ==> queryOneById:1 
+2017-10-03 13:56:48.445 DEBUG 494 --- [http-nio-8081-exec-1] c.j.s.d.m.D.selectByPrimaryKey           : ==>  Preparing: select id, dic_group, dic_name, dic_value, remark, ordering, state, type, parent_id from dictionary where id = ? 
+2017-10-03 13:56:48.461 DEBUG 494 --- [http-nio-8081-exec-1] c.j.s.d.m.D.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2017-10-03 13:56:48.473 DEBUG 494 --- [http-nio-8081-exec-1] c.j.s.d.m.D.selectByPrimaryKey           : <==      Total: 1
+2017-10-03 13:56:48.474 DEBUG 494 --- [http-nio-8081-exec-1] c.j.s.s.impl.DictionaryServiceImpl       : ==> queryOneById result:{"id":1,"dicGroup":"group1","dicName":"boy","dicValue":"0","remark":null,"ordering":1,"state":1,"type":0,"parentId":null}
+2017-10-03 13:57:41.626 DEBUG 494 --- [http-nio-8081-exec-4] c.j.s.s.impl.DictionaryServiceImpl       : ==> queryOneById:1 
+2017-10-03 13:57:41.627 DEBUG 494 --- [http-nio-8081-exec-4] c.j.s.d.m.D.selectByPrimaryKey           : ==>  Preparing: select id, dic_group, dic_name, dic_value, remark, ordering, state, type, parent_id from dictionary where id = ? 
+2017-10-03 13:57:41.627 DEBUG 494 --- [http-nio-8081-exec-4] c.j.s.d.m.D.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2017-10-03 13:57:41.629 DEBUG 494 --- [http-nio-8081-exec-4] c.j.s.d.m.D.selectByPrimaryKey           : <==      Total: 1
+2017-10-03 13:57:41.629 DEBUG 494 --- [http-nio-8081-exec-4] c.j.s.s.impl.DictionaryServiceImpl       : ==> queryOneById result:{"id":1,"dicGroup":"group1","dicName":"boy","dicValue":"0","remark":null,"ordering":1,"state":1,"type":0,"parentId":null}
+2017-10-03 13:57:45.302 DEBUG 494 --- [http-nio-8081-exec-10] c.j.s.s.impl.DictionaryServiceImpl       : ==> queryOneById:1 
+2017-10-03 13:57:45.303 DEBUG 494 --- [http-nio-8081-exec-10] c.j.s.d.m.D.selectByPrimaryKey           : ==>  Preparing: select id, dic_group, dic_name, dic_value, remark, ordering, state, type, parent_id from dictionary where id = ? 
+2017-10-03 13:57:45.303 DEBUG 494 --- [http-nio-8081-exec-10] c.j.s.d.m.D.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2017-10-03 13:57:45.304 DEBUG 494 --- [http-nio-8081-exec-10] c.j.s.d.m.D.selectByPrimaryKey           : <==      Total: 1
+2017-10-03 13:57:45.305 DEBUG 494 --- [http-nio-8081-exec-10] c.j.s.s.impl.DictionaryServiceImpl       : ==> queryOneById result:{"id":1,"dicGroup":"group1","dicName":"boy","dicValue":"0","remark":null,"ordering":1,"state":1,"type":0,"parentId":null}
+2017-10-03 20:17:42.900  INFO 494 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1146e9b7: startup date [Tue Oct 03 13:56:29 CST 2017]; root of context hierarchy
+2017-10-03 20:17:43.002  INFO 494 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown

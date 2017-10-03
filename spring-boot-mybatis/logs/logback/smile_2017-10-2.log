@@ -1,0 +1,14 @@
+2017-10-2 01:59:50 main INFO Starting DictionaryMapperTest on dengjunzhendeMacBook-Pro.local with PID 693 (started by jadson in /Users/jadson/share/code/spring-boot-mybatis)
+2017-10-2 01:59:50 main DEBUG Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-10-2 01:59:50 main INFO No active profile set, falling back to default profiles: default
+2017-10-2 01:59:53 main INFO Started DictionaryMapperTest in 18.356 seconds (JVM running for 19.161)
+2017-10-2 01:59:54 main DEBUG ==>  Preparing: select id, dic_group, dic_name, dic_value, remark, ordering, state, type, parent_id from dictionary where id = ? 
+2017-10-2 01:59:54 main DEBUG ==> Parameters: 1(Integer)
+2017-10-2 01:59:54 main DEBUG <==      Total: 1
+2017-10-2 02:49:41 main INFO Starting DictionaryMapperTest on dengjunzhendeMacBook-Pro.local with PID 769 (started by jadson in /Users/jadson/share/code/spring-boot-mybatis)
+2017-10-2 02:49:41 main DEBUG Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-10-2 02:49:41 main INFO No active profile set, falling back to default profiles: default
+2017-10-2 02:49:44 main INFO Started DictionaryMapperTest in 18.131 seconds (JVM running for 18.986)
+2017-10-2 02:49:45 main DEBUG ==>  Preparing: select id, dic_group, dic_name, dic_value, remark, ordering, state, type, parent_id from dictionary where id = ? 
+2017-10-2 02:49:45 main DEBUG ==> Parameters: 1(Integer)
+2017-10-2 02:49:45 main DEBUG <==      Total: 1

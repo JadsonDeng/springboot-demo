@@ -2,7 +2,7 @@
 
 **项目介绍**
 + spring-boot-mybatis：Spring Boot与myBatis整合，采用的是mapper+xml的方式。
-+ spring-boot: 以上所有组件的整合，前端采用layui库。
++ spring-boot: 以上所有组件的整合(数据访问采用的是myBatis)，前端采用layui库。
 
 
 **参考**
