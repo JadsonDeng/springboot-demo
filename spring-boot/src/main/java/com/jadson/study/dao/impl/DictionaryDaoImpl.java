@@ -1,7 +1,5 @@
 package com.jadson.study.dao.impl;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -13,17 +11,16 @@ import com.jadson.study.utils.BaseDaoImpl;
 import com.jadson.study.utils.BaseMapper;
 
 /**
- * jadson
- * 2017/9/30
+ * jadson 2017/9/30
  */
 @Repository
 public class DictionaryDaoImpl extends BaseDaoImpl<Dictionary, DictionaryExample> implements DictionaryDao {
 
-    @Autowired(required = false)
-    private DictionaryMapper dictionaryMapper;
+	@Autowired(required = false)
+	private DictionaryMapper dictionaryMapper;
 
-    @Override
-    public BaseMapper<Dictionary, DictionaryExample> getBaseMapper() {
-        return this.dictionaryMapper;
-    }
+	@Override
+	public BaseMapper<Dictionary, DictionaryExample> getBaseMapper() {
+		return this.dictionaryMapper;
+	}
 }

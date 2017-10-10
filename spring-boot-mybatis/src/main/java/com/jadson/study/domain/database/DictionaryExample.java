@@ -878,15 +878,5 @@ public class DictionaryExample {
         protected Criterion(String condition, Object value, Object secondValue) {
             this(condition, value, secondValue, null);
         }
-
-    }
-    protected String limitClause;
-
-    public String getLimitClause() {
-        return limitClause;
-    }
-
-    public void setLimitClause(int offset, int limit) {
-        this.limitClause = offset + ", " + limit;
     }
 }

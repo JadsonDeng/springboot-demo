@@ -332,22 +332,4 @@
       parent_id = #{parentId,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
-
-  <select id="selectByExampleWithLimit" resultMap="BaseResultMap" parameterType="com.jadson.study.domain.database.DictionaryExample" >
-    select
-    <if test="distinct" >
-      distinct
-    </if>
-    <include refid="Base_Column_List" />
-    from dictionary
-    <if test="_parameter != null" >
-      <include refid="Example_Where_Clause" />
-    </if>
-    <if test="orderByClause != null" >
-      order by ${orderByClause}
-    </if>
-    <if test="limitClause != null" >
-      limit ${limitClause}
-    </if>
-  </select>
 </mapper>

@@ -13,3 +13,4 @@ mvnw.cmd
 target
 .Ds_Store
 spring-boot-demo
+*.log
