@@ -2,6 +2,8 @@ package com.jadson.dto;
 
 import java.util.Date;
 
+import javax.validation.constraints.Past;
+
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.hibernate.validator.constraints.NotBlank;
@@ -20,6 +22,7 @@ public class User {
 	private String username;
 	@NotBlank
 	private String password;
+	@Past
 	private Date birthday;
 
 	@JsonView(UserSimpleView.class)
