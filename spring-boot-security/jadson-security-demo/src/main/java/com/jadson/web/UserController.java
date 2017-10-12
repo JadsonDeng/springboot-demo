@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.annotation.JsonView;
 import com.jadson.dto.User;
+import com.jadson.exception.UserNotExistException;
 
 @RestController
 @RequestMapping("/user")
@@ -56,10 +57,11 @@ public class UserController {
 	@GetMapping(value = "/{id:\\d+}")
 	@JsonView(User.UserDetailView.class)
 	public User getInfo(@PathVariable String id) {
-		User user = new User();
-		user.setUsername("tom");
-		user.setPassword("123456");
-		return user;
+		throw new UserNotExistException(id);
+		// User user = new User();
+		// user.setUsername("tom");
+		// user.setPassword("123456");
+		// return user;
 	}
 
 }
