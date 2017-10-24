@@ -2,18 +2,25 @@ package com.jadson;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.context.annotation.Bean;
+
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
-@RestController
+@EnableSwagger2
 public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
-
-	@GetMapping("/hello")
-	public String hello() {
-		return "hello spring security";
+	
+	@Bean
+	public Docket useApi() {
+		return new Docket(DocumentationType.SWAGGER_2)
+				.select()
+//				.paths(path -> path.startsWith("/api/"))
+				.build();
 	}
+
 }
