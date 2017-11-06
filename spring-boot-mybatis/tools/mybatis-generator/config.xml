@@ -37,6 +37,6 @@
         </javaClientGenerator>
 
         <!--<table tableName="user" domainObjectName="User"/>-->
-        <table tableName="dictionary" domainObjectName="Dictionary"/>
+        <table tableName="sys_dictionary" domainObjectName="SysDictionary"/>
     </context>
 </generatorConfiguration>
