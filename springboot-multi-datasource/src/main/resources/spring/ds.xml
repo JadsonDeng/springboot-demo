@@ -3,15 +3,19 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
+    <!--　
+        读写分离配置
+        １．继承MultiDataSourceHandler类，实现determineCurrentLookupKey方法
+        ２．添加以下配置
+        -->
     <bean id="jadsonDataSource" class="com.jadson.demo.config.MultiDataSourceHandler">
-        <property name="defaultTargetDataSource" ref="jadsonDataSourceMaster"></property>
         <property name="targetDataSources">
             <map key-type="java.lang.String" value-type="com.zaxxer.hikari.HikariDataSource">
                 <entry key="jadsonDataSourceMaster" value-ref="jadsonDataSourceMaster"/>
                 <entry key="jadsonDataSourceSlave" value-ref="jadsonDataSourceSlave"/>
             </map>
         </property>
+        <property name="defaultTargetDataSource" ref="jadsonDataSourceMaster"/>
     </bean>
 
     <bean id="jadsonDataSourceMaster" class="com.zaxxer.hikari.HikariDataSource">
@@ -40,6 +44,27 @@
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
         <property name="basePackage" value="com.jadson.demo.db1.mapper"/>
+    </bean>
+
+    <!-- 多数据源的配置 -->
+    <bean id="sampleDataSource" class="com.zaxxer.hikari.HikariDataSource">
+        <property name="driverClassName" value="${datasource.sample.driverClassName}"/>
+        <property name="jdbcUrl" value="${datasource.sample.url}"/>
+        <property name="username" value="${datasource.sample.username}"/>
+        <property name="password" value="${datasource.sample.password}"/>
+    </bean>
+
+    <bean id="sampleTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="sampleDataSource"/>
+    </bean>
+    <bean id="sampleSqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="sampleDataSource"/>
+        <property name="configLocation" value="classpath:spring/mybatis.xml"/>
+        <property name="mapperLocations" value="classpath*:mapper/db2/*.xml"/>
+    </bean>
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sampleSqlSessionFactory"/>
+        <property name="basePackage" value="com.jadson.demo.db2.mapper"/>
     </bean>
 
 </beans>
