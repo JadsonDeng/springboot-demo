@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="jadsonDataSource" class="com.jadson.demo.config.MultiDataSourceHandler">
+        <property name="defaultTargetDataSource" ref="jadsonDataSourceMaster"></property>
+        <property name="targetDataSources">
+            <map key-type="java.lang.String" value-type="com.zaxxer.hikari.HikariDataSource">
+                <entry key="jadsonDataSourceMaster" value-ref="jadsonDataSourceMaster"/>
+                <entry key="jadsonDataSourceSlave" value-ref="jadsonDataSourceSlave"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="jadsonDataSourceMaster" class="com.zaxxer.hikari.HikariDataSource">
+        <property name="driverClassName" value="${datasource.jadson_master.driverClassName}"/>
+        <property name="jdbcUrl" value="${datasource.jadson_master.url}"/>
+        <property name="username" value="${datasource.jadson_master.username}"/>
+        <property name="password" value="${datasource.jadson_master.password}"/>
+    </bean>
+    <bean id="jadsonDataSourceSlave" class="com.zaxxer.hikari.HikariDataSource">
+        <property name="driverClassName" value="${datasource.jadson_slave.driverClassName}"/>
+        <property name="jdbcUrl" value="${datasource.jadson_slave.url}"/>
+        <property name="username" value="${datasource.jadson_slave.username}"/>
+        <property name="password" value="${datasource.jadson_slave.password}"/>
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="jadsonDataSource"/>
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="jadsonDataSource"/>
+        <property name="configLocation" value="classpath:spring/mybatis.xml"/>
+        <property name="mapperLocations" value="classpath*:mapper/db1/*.xml"/>
+    </bean>
+    
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+        <property name="basePackage" value="com.jadson.demo.db1.mapper"/>
+    </bean>
+
+</beans>
